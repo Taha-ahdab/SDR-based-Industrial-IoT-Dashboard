@@ -1,0 +1,1737 @@
+[
+    {
+        "id": "1470fe25046c2004",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9c9667e2e75f8a8d",
+        "type": "tab",
+        "label": "Industrial IoT Full",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e08c72b73d2e7dcb",
+        "type": "ui_tab",
+        "name": "SDR-based Industrial IOT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3697d74f2d613aa8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "SDR-based Industrial IoT Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f0603c6c05a20a2b",
+        "type": "ui_group",
+        "name": "Node 1",
+        "tab": "e08c72b73d2e7dcb",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2b903af03e6ae41",
+        "type": "mqtt-broker",
+        "name": "Node 1 Temp MQTT",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "69d68966d21a068d",
+        "type": "mqtt-broker",
+        "name": "Node 2 Temp MQTT",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "82ad24cb47a02a87",
+        "type": "mqtt-broker",
+        "name": "Node 3 Temp MQTT",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "broker_local_sdr",
+        "type": "mqtt-broker",
+        "name": "Local MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "tab_main",
+        "type": "ui_tab",
+        "name": "Industrial IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b84118927d95d784",
+        "type": "ui_tab",
+        "name": "Industrial IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "broker_local_sdr_final",
+        "type": "mqtt-broker",
+        "name": "Local MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "tab_main_final",
+        "type": "ui_tab",
+        "name": "Industrial IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_tab_iot_full_01",
+        "type": "ui_tab",
+        "name": "Industrial IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_sdr_full_01",
+        "type": "ui_group",
+        "name": "SDR Monitoring",
+        "tab": "e08c72b73d2e7dcb",
+        "order": 5,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": "sdr-highlight"
+    },
+    {
+        "id": "mqtt_broker_iot_full_01",
+        "type": "mqtt-broker",
+        "name": "Local MQTT",
+        "broker": "192.168.0.101",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9a9631a949a4b0ac",
+        "type": "ui_group",
+        "name": "Motor",
+        "tab": "e08c72b73d2e7dcb",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26c085b170fd3a74",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 Temp",
+        "topic": "project/node1/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "1a33251ab3f5a2f3"
+            ]
+        ]
+    },
+    {
+        "id": "1a33251ab3f5a2f3",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "f0603c6c05a20a2b",
+        "order": 1,
+        "width": "5",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7f6915c6bd2c7f1a",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 Hum",
+        "topic": "project/node1/hum",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "f508fd85a45939c1"
+            ]
+        ]
+    },
+    {
+        "id": "f508fd85a45939c1",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "f0603c6c05a20a2b",
+        "order": 2,
+        "width": "5",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e3b3278f070ea2d4",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 GasA",
+        "topic": "project/node1/gasA",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "8d3c19ade7d9ba12"
+            ]
+        ]
+    },
+    {
+        "id": "8d3c19ade7d9ba12",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "f0603c6c05a20a2b",
+        "order": 3,
+        "width": "5",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gas Analog",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3000",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "25e6497eb19a60d3",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 GasD",
+        "topic": "project/node1/gasD",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "508ceddeded87ed2"
+            ]
+        ]
+    },
+    {
+        "id": "508ceddeded87ed2",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "f0603c6c05a20a2b",
+        "order": 4,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Gas Digital",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 350,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6f840b6e2e4e01ee",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 X",
+        "topic": "project/node1/x",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "3c62de2b1950929b"
+            ]
+        ]
+    },
+    {
+        "id": "d9194e8ed5b81628",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 Y",
+        "topic": "project/node1/y",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "3c62de2b1950929b"
+            ]
+        ]
+    },
+    {
+        "id": "4956fc82c4cd6904",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Node1 Z",
+        "topic": "project/node1/z",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "3c62de2b1950929b"
+            ]
+        ]
+    },
+    {
+        "id": "3c62de2b1950929b",
+        "type": "join",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Join XYZ 1",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "1",
+        "count": "3",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "484c18e00c28b695"
+            ]
+        ]
+    },
+    {
+        "id": "484c18e00c28b695",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Format XYZ 1",
+        "func": "const x = msg.payload['project/node1/x'];\nconst y = msg.payload['project/node1/y'];\nconst z = msg.payload['project/node1/z'];\nmsg.payload = `X: ${x} | Y: ${y} | Z: ${z}`;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "3a673d604e8fe92e"
+            ]
+        ]
+    },
+    {
+        "id": "3a673d604e8fe92e",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "f0603c6c05a20a2b",
+        "order": 5,
+        "width": "10",
+        "height": "2",
+        "name": "",
+        "label": "Acceleration",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "55ba73797c24b6f2",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "SDR Strongest Frequency",
+        "topic": "project/sdr/strongest_freq_hz",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 80,
+        "wires": [
+            [
+                "4ec5352dc980134b",
+                "16440bf4042c3a73"
+            ]
+        ]
+    },
+    {
+        "id": "4ec5352dc980134b",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Format SDR Freq",
+        "func": "let v = Number(msg.payload);\nif (!isNaN(v)) msg.payload = (v / 1e6).toFixed(1) + ' MHz';\nreturn msg;",
+        "outputs": 1,
+        "x": 1320,
+        "y": 80,
+        "wires": [
+            [
+                "5385d1558f57f2bc"
+            ]
+        ]
+    },
+    {
+        "id": "5385d1558f57f2bc",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "order": 1,
+        "width": "8",
+        "height": "2",
+        "name": "",
+        "label": "Strongest Frequency",
+        "format": "<span style=\"color:#2563eb; font-weight:bold;\"> {{msg.payload}} </span>",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1540,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "00d6c675a64e5cdf",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "SDR Strongest Power",
+        "topic": "project/sdr/strongest_power_db",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 140,
+        "wires": [
+            [
+                "a117001ac1f3248a",
+                "c9b7037d3ae5b94a"
+            ]
+        ]
+    },
+    {
+        "id": "a117001ac1f3248a",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "ui_group_sdr_full_01",
+        "order": 2,
+        "width": "14",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Strongest Power",
+        "label": "dB",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "0",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "-12",
+        "seg2": "-6",
+        "diff": false,
+        "className": "",
+        "x": 1320,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f27e1ed3659024f1",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "SDR Station Detected",
+        "topic": "project/sdr/station_detected",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 220,
+        "wires": [
+            [
+                "65efe208a4f01708"
+            ]
+        ]
+    },
+    {
+        "id": "65efe208a4f01708",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Format Detection",
+        "func": "if (msg.payload === 1 || msg.payload === '1' || msg.payload === true || msg.payload === 'true') {\n    msg.payload = 'Station Detected';\n} else {\n    msg.payload = 'No Signal';\n}\nreturn msg;",
+        "outputs": 1,
+        "x": 1320,
+        "y": 220,
+        "wires": [
+            [
+                "9f256638efbcc7b8"
+            ]
+        ]
+    },
+    {
+        "id": "9f256638efbcc7b8",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "order": 3,
+        "width": "8",
+        "height": "2",
+        "name": "",
+        "label": "RF Status",
+        "format": "<span style=\"color:#2563eb; font-weight:bold;\"> {{msg.payload}} </span>",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1540,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "386f2d64b64d7a40",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "SDR Top3",
+        "topic": "project/sdr/top3",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 300,
+        "wires": [
+            [
+                "ec578ca7c04af941"
+            ]
+        ]
+    },
+    {
+        "id": "ec578ca7c04af941",
+        "type": "json",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1270,
+        "y": 300,
+        "wires": [
+            [
+                "94507e9f5c28a272"
+            ]
+        ]
+    },
+    {
+        "id": "94507e9f5c28a272",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Format Top3",
+        "func": "let p = msg.payload;\nif (!Array.isArray(p)) return null;\nmsg.payload = p.map((x, i) => `#${i+1} -> ${(x.freq_hz/1e6).toFixed(1)} MHz | ${x.power_db} dB`).join('\\n');\nreturn msg;",
+        "outputs": 1,
+        "x": 1440,
+        "y": 300,
+        "wires": [
+            [
+                "387b51dc34b04f64"
+            ]
+        ]
+    },
+    {
+        "id": "387b51dc34b04f64",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "order": 4,
+        "width": "8",
+        "height": "3",
+        "name": "",
+        "label": "Top 3 Frequencies",
+        "format": "<pre style=\"white-space:pre-wrap; margin:0; text-align:center; color:#2563eb; font-weight:800;\">{{msg.payload}}</pre>",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6c7c95183afe3de2",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "SDR Alert",
+        "topic": "project/sdr/alert",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 380,
+        "wires": [
+            [
+                "253cf0646a71d6a7"
+            ]
+        ]
+    },
+    {
+        "id": "253cf0646a71d6a7",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "order": 5,
+        "width": "14",
+        "height": "2",
+        "name": "",
+        "label": "System Status",
+        "format": "<span style=\"color:#2563eb;\"> {{msg.payload}} </span>",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1320,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "16440bf4042c3a73",
+        "type": "change",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Set topic freq",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "freq",
+                "tot": "str"
+            }
+        ],
+        "x": 1320,
+        "y": 460,
+        "wires": [
+            [
+                "ee004d0411dd1b52"
+            ]
+        ]
+    },
+    {
+        "id": "c9b7037d3ae5b94a",
+        "type": "change",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Set topic power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            }
+        ],
+        "x": 1320,
+        "y": 520,
+        "wires": [
+            [
+                "ee004d0411dd1b52"
+            ]
+        ]
+    },
+    {
+        "id": "ee004d0411dd1b52",
+        "type": "join",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Join Freq Power",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "1",
+        "count": "2",
+        "x": 1540,
+        "y": 490,
+        "wires": [
+            [
+                "d876cf00cbae06d1"
+            ]
+        ]
+    },
+    {
+        "id": "d876cf00cbae06d1",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Build History Log",
+        "func": "let freqHz = Number(msg.payload.freq);\nlet pwr = Number(msg.payload.power);\nif (isNaN(freqHz) || isNaN(pwr)) return null;\nlet line = new Date().toLocaleTimeString('en-GB', {hour12:false}) + ' | ' + (freqHz/1e6).toFixed(1) + ' MHz | ' + pwr.toFixed(2) + ' dB';\nlet hist = flow.get('sdr_hist_lines') || [];\nhist.unshift(line);\nif (hist.length > 10) hist = hist.slice(0, 10);\nflow.set('sdr_hist_lines', hist);\nmsg.payload = hist.join('\\n');\nreturn msg;",
+        "outputs": 1,
+        "x": 1740,
+        "y": 490,
+        "wires": [
+            [
+                "a590746eb46da11f"
+            ]
+        ]
+    },
+    {
+        "id": "a590746eb46da11f",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "order": 7,
+        "width": "9",
+        "height": "5",
+        "name": "",
+        "label": "History Log",
+        "format": "<span style=\"color:#2563eb;\"> {{msg.payload}} </span>",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1960,
+        "y": 490,
+        "wires": []
+    },
+    {
+        "id": "4b7c6905e59d2f1e",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Spectrum MQTT",
+        "topic": "project/sdr/spectrum",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            [
+                "87f5f218a4aca5c3"
+            ]
+        ]
+    },
+    {
+        "id": "87f5f218a4aca5c3",
+        "type": "json",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1260,
+        "y": 620,
+        "wires": [
+            [
+                "4ee178ed288d4651"
+            ]
+        ]
+    },
+    {
+        "id": "4ee178ed288d4651",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "Build Waterfall Matrix",
+        "func": "let p = msg.payload;\nif (!p || !Array.isArray(p.spectrum)) return null;\n\nlet row = p.spectrum.map(item => Number(item.power_db.toFixed(2)));\nlet xLabels = p.spectrum.map(item => Number((item.freq_offset_hz / 1000).toFixed(1)));\nlet centerFreqHz = Number(p.center_freq_hz || 100000000);\n\nlet matrix = flow.get('wf_matrix_full') || [];\nmatrix.unshift(row);\n\nconst MAX_ROWS = 30;\nif (matrix.length > MAX_ROWS) {\n    matrix = matrix.slice(0, MAX_ROWS);\n}\n\nflow.set('wf_matrix_full', matrix);\n\nmsg.payload = {\n    x: xLabels,\n    z: matrix,\n    center_freq_hz: centerFreqHz\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 1480,
+        "y": 620,
+        "wires": [
+            [
+                "e448d980e1388803"
+            ]
+        ]
+    },
+    {
+        "id": "e448d980e1388803",
+        "type": "ui_template",
+        "z": "9c9667e2e75f8a8d",
+        "group": "ui_group_sdr_full_01",
+        "name": "Waterfall View",
+        "order": 6,
+        "width": "13",
+        "height": "10",
+        "format": "<div id=\"waterfall_full\" style=\"width:100%; height:500px; min-height:500px;\"></div>\n<script src=\"https://cdn.plot.ly/plotly-2.35.2.min.js\"></script>\n<script>\n(function(scope) {\n    function render(data) {\n        if (!data || !data.x || !data.z) return;\n\n        const centerFreqHz = Number(data.center_freq_hz || 100000000);\n\n        const xMHz = data.x.map(khzOffset => {\n            return (centerFreqHz + (Number(khzOffset) * 1000)) / 1e6;\n        });\n\n        let lastRow = data.z[data.z.length - 1];\n        let indices = [...lastRow.keys()];\n        indices.sort((a, b) => lastRow[b] - lastRow[a]);\n\n        let selected = [];\n        let minSpacing = 0.2;\n\n        for (let i of indices) {\n            let freq = xMHz[i];\n            let tooClose = selected.some(f => Math.abs(f - freq) < minSpacing);\n            if (!tooClose) {\n                selected.push(freq);\n            }\n            if (selected.length === 3) break;\n        }\n\n        const lineColors = ['red', 'yellow', 'cyan'];\n\n        const trace = {\n            x: xMHz,\n            z: data.z,\n            type: 'heatmap',\n            colorscale: [\n                [0, 'black'],\n                [0.2, 'blue'],\n                [0.4, 'cyan'],\n                [0.6, 'yellow'],\n                [0.8, 'orange'],\n                [1, 'red']\n            ],\n            showscale: true,\n            zsmooth: 'best'\n        };\n\n        const layout = {\n            title: 'RF Waterfall',\n            margin: { l: 60, r: 20, t: 40, b: 55 },\n            xaxis: {\n                title: 'Frequency (MHz)'\n            },\n            yaxis: {\n                title: 'Time',\n                autorange: 'reversed'\n            },\n            shapes: selected.map((f, i) => ({\n                type: 'line',\n                x0: f,\n                x1: f,\n                y0: 0,\n                y1: data.z.length,\n                line: {\n                    color: lineColors[i] || 'red',\n                    width: 2,\n                    dash: 'dot'\n                }\n            })),\n            annotations: selected.map((f, i) => ({\n                x: f,\n                y: 2 + i,\n                text: 'F' + (i + 1) + ': ' + f.toFixed(1) + ' MHz',\n                showarrow: true,\n                arrowhead: 2,\n                font: { color: lineColors[i] || 'red' }\n            })),\n            paper_bgcolor: 'white',\n            plot_bgcolor: 'white'\n        };\n\n        Plotly.react('waterfall_full', [trace], layout, {\n            displayModeBar: false,\n            responsive: true\n        });\n    }\n\n    scope.$watch('msg', function(msg) {\n        if (!msg || !msg.payload) return;\n        render(msg.payload);\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1760,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d9f84219c592b41",
+        "type": "ui_template",
+        "z": "9c9667e2e75f8a8d",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbody.nr-dashboard-theme md-content {\n    background-color: #f4f7fb !important;\n}\n\nmd-toolbar {\n    background: linear-gradient(90deg, #0f172a, #1d4ed8) !important;\n    color: white !important;\n}\nmd-toolbar .md-toolbar-tools {\n    font-size: 24px !important;\n    font-weight: 700 !important;\n}\n\n.nr-dashboard-card {\n    background: #ffffff !important;\n    border-radius: 18px !important;\n    box-shadow: 0 6px 18px rgba(0,0,0,0.10) !important;\n    border: 1px solid #e5e7eb !important;\n    padding: 8px !important;\n}\n\n.nr-dashboard-cardtitle {\n    color: #1d4ed8 !important;\n    font-size: 28px !important;\n    font-weight: 700 !important;\n    text-align: center !important;\n    padding-top: 8px !important;\n    padding-bottom: 8px !important;\n}\n\n.nr-dashboard-cardcontainer {\n    display: flex !important;\n    flex-direction: column !important;\n    align-items: center !important;\n    justify-content: flex-start !important;\n}\n\n.nr-dashboard-text,\n.nr-dashboard-text p,\n.nr-dashboard-text div,\n.nr-dashboard-text span {\n    text-align: center !important;\n    font-weight: 600 !important;\n    color: #111827 !important;\n}\n\nlabel,\n.nr-dashboard-gauge-title,\n.nr-dashboard-cardcontainer md-card-content label {\n    color: #111827 !important;\n    font-weight: 700 !important;\n    text-align: center !important;\n}\n\n.nr-dashboard-gauge {\n    display: flex !important;\n    justify-content: center !important;\n    align-items: center !important;\n}\n.nr-dashboard-gauge svg {\n    display: block !important;\n    margin: auto !important;\n}\n\n.nr-dashboard-theme .value {\n    font-weight: 800 !important;\n    color: #0f172a !important;\n}\n\n.nr-dashboard-card:nth-of-type(1) {\n    border-top: 5px solid #2563eb !important;\n}\n.nr-dashboard-card:nth-of-type(2) {\n    border-top: 5px solid #16a34a !important;\n}\n.nr-dashboard-card:nth-of-type(3) {\n    border-top: 5px solid #ea580c !important;\n}\n.nr-dashboard-card:nth-of-type(4) {\n    border-top: 5px solid #7c3aed !important;\n}\n\npre {\n    font-family: Consolas, monospace !important;\n    font-size: 15px !important;\n    color: #0f172a !important;\n}\n\nstrong, b {\n    font-weight: 800 !important;\n}\n\n.value-blue {\n    color: #2563eb !important;\n    font-weight: 800 !important;\n    font-size: 28px !important;\n}\n\n.value-green {\n    color: #16a34a !important;\n    font-weight: 800 !important;\n    font-size: 26px !important;\n}\n\n.value-red {\n    color: #dc2626 !important;\n    font-weight: 800 !important;\n    font-size: 22px !important;\n}\n\n.value-purple {\n    color: #7c3aed !important;\n    font-weight: 800 !important;\n    font-size: 24px !important;\n}\n\n.value-dark {\n    color: #0f172a !important;\n    font-weight: 800 !important;\n    font-size: 22px !important;\n}\n\n.sdr-highlight .nr-dashboard-cardtitle {\n    color: #7c3aed !important;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 640,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50e0699c4e00e183",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1000,
+        "wires": [
+            [
+                "fb70656a7455530e"
+            ]
+        ]
+    },
+    {
+        "id": "0e1d5c49b615d39f",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/hum",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1060,
+        "wires": [
+            [
+                "5ba61d65b7372d4f"
+            ]
+        ]
+    },
+    {
+        "id": "2230c58a1d8d019a",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/vibration",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "b807137293e78dab"
+            ]
+        ]
+    },
+    {
+        "id": "db9e9e16231ae4c6",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1180,
+        "wires": [
+            [
+                "5799cbd0515bc530"
+            ]
+        ]
+    },
+    {
+        "id": "c3e45ef41d352ddb",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/alert",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1240,
+        "wires": [
+            [
+                "420ed00ce10bc87e"
+            ]
+        ]
+    },
+    {
+        "id": "2e3a091d43658627",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/accelX",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1300,
+        "wires": [
+            [
+                "503e007abc263b52"
+            ]
+        ]
+    },
+    {
+        "id": "5fc602a442b85e07",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/accelY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1360,
+        "wires": [
+            [
+                "503e007abc263b52"
+            ]
+        ]
+    },
+    {
+        "id": "a990344ea9c5b329",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/accelZ",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1420,
+        "wires": [
+            [
+                "503e007abc263b52"
+            ]
+        ]
+    },
+    {
+        "id": "fb70656a7455530e",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "9a9631a949a4b0ac",
+        "order": 6,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "5ba61d65b7372d4f",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "9a9631a949a4b0ac",
+        "order": 7,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 400,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "72c176e4f41da2a9",
+        "type": "ui_gauge",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "group": "9a9631a949a4b0ac",
+        "order": 8,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Vibration",
+        "label": "g",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 620,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "5799cbd0515bc530",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "9a9631a949a4b0ac",
+        "order": 2,
+        "width": "8",
+        "height": "1",
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 390,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "420ed00ce10bc87e",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "9a9631a949a4b0ac",
+        "order": 3,
+        "width": "8",
+        "height": "1",
+        "name": "",
+        "label": "Alert",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 390,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "503e007abc263b52",
+        "type": "join",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "msg.payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 410,
+        "y": 1360,
+        "wires": [
+            [
+                "96d95e0a503023c7"
+            ]
+        ]
+    },
+    {
+        "id": "96d95e0a503023c7",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "function 2",
+        "func": "msg.payload = \"X: \" + msg.payload[\"project/motor/accelX\"] +\n              \" | Y: \" + msg.payload[\"project/motor/accelY\"] +\n              \" | Z: \" + msg.payload[\"project/motor/accelZ\"];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1360,
+        "wires": [
+            [
+                "1381e43dd83093aa"
+            ]
+        ]
+    },
+    {
+        "id": "1381e43dd83093aa",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "9a9631a949a4b0ac",
+        "order": 9,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "Acceleration",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "f26b3359c2c315c0",
+        "type": "mqtt out",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/control/set",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker_iot_full_01",
+        "x": 650,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "38046f1b0221d716",
+        "type": "ui_switch",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "label": "Motor Control",
+        "tooltip": "",
+        "group": "9a9631a949a4b0ac",
+        "order": 1,
+        "width": "4",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "project/motor/control/set",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 360,
+        "y": 1480,
+        "wires": [
+            [
+                "f26b3359c2c315c0"
+            ]
+        ]
+    },
+    {
+        "id": "04c28fe7a7245228",
+        "type": "ui_slider",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "label": "Motor Speed",
+        "tooltip": "",
+        "group": "9a9631a949a4b0ac",
+        "order": 4,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "outs": "all",
+        "topic": "project/motor/speed/set",
+        "topicType": "str",
+        "min": 0,
+        "max": "255",
+        "step": "5",
+        "className": "",
+        "x": 170,
+        "y": 1580,
+        "wires": [
+            [
+                "646a7b87e0f42ac6"
+            ]
+        ]
+    },
+    {
+        "id": "646a7b87e0f42ac6",
+        "type": "mqtt out",
+        "z": "9c9667e2e75f8a8d",
+        "name": "project/motor/speed",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker_iot_full_01",
+        "x": 440,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "2b38bbc8ca16bc7a",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/speed",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc0731ecdc519e10",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "9a9631a949a4b0ac",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "Motor Speed",
+        "format": "{{msg.payload}} / 255",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 470,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "09131c380447640b",
+        "type": "mqtt in",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "project/motor/speed",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "mqtt_broker_iot_full_01",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1680,
+        "wires": [
+            [
+                "cc0731ecdc519e10"
+            ]
+        ]
+    },
+    {
+        "id": "b807137293e78dab",
+        "type": "function",
+        "z": "9c9667e2e75f8a8d",
+        "name": "function 1",
+        "func": "let vibration = Number(msg.payload);\n\nlet readings = context.get(\"readings\") || [];\n\nreadings.push(vibration);\nif (readings.length > 10) readings.shift();\n\ncontext.set(\"readings\", readings);\n\nlet avg = readings.reduce((a, b) => a + b, 0) / readings.length;\n\n// Output 1 → للـ Gauge (القيمة)\nlet output1 = { payload: vibration };\n\n// Output 2 → للـ Text (الحالة)\nlet output2;\n\nif (avg < 4000) {\n    output2 = { payload: \"🟢 Normal\" };\n} else if (avg < 8000) {\n    output2 = { payload: \"🟡 Warning\" };\n} else {\n    output2 = { payload: \"🔴 Critical Vibration\" };\n}\nif (avg > 8000) {\n    // يرسل أمر إيقاف\n    return [\n        output1,\n        output2,\n        { topic: \"project/motor/control/set\", payload: 0 }\n    ];\n}\n\nreturn [output1, output2];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1120,
+        "wires": [
+            [
+                "72c176e4f41da2a9"
+            ],
+            [
+                "1b5d98260d79f395"
+            ],
+            [
+                "4e8a66bbe628bcad"
+            ]
+        ]
+    },
+    {
+        "id": "1b5d98260d79f395",
+        "type": "ui_text",
+        "z": "9c9667e2e75f8a8d",
+        "group": "9a9631a949a4b0ac",
+        "order": 10,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "Predictive Status",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 650,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4e8a66bbe628bcad",
+        "type": "mqtt out",
+        "z": "9c9667e2e75f8a8d",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker_iot_full_01",
+        "x": 610,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "374b5c30eaf3d22f",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
